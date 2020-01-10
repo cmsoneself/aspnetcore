@@ -58,7 +58,7 @@ namespace Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal
             /// </summary>
             [Required]
             [EmailAddress]
-            [Display(Name = "Email")]
+            [Display(Name = "邮件")]
             public string Email { get; set; }
 
             /// <summary>
@@ -68,7 +68,7 @@ namespace Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
             [DataType(DataType.Password)]
-            [Display(Name = "Password")]
+            [Display(Name = "密码")]
             public string Password { get; set; }
 
             /// <summary>
@@ -76,7 +76,7 @@ namespace Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             [DataType(DataType.Password)]
-            [Display(Name = "Confirm password")]
+            [Display(Name = "再次输入密码")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
         }
